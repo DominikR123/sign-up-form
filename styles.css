@@ -20,8 +20,8 @@ body{
     grid-column-gap: 20em;
     grid-row-gap: 0px;
     text-align: center;
-    width: 90%; 
-    margin: 10% auto 10% auto;
+    width: 100%; 
+    margin: auto;
 }
 
 

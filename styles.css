@@ -8,12 +8,12 @@
 
 
 body{
-    background-image: url("bg-intro-desktop.png");
-    background-color: hsl(0, 100%, 74%) ;
     
 }
 
 .content{
+    background-image: url("bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;

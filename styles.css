@@ -17,8 +17,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0.5em;
-    text-align: center; 
-    margin: 10%;
+    text-align: center;
 }
 
 

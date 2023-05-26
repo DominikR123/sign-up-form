@@ -8,7 +8,7 @@
 
 
 body{
-    background-image: url("bg-intro-desktop.png");
+    background-image: url(../intro-component-with-signup-form-master/images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%) ;
 }
 
@@ -17,23 +17,18 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0.5em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto;
+    text-align: center; 
+    margin: 10%;
 }
 
 
 .columnright{
-    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     
 }
 
 .columnleft{
-    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     margin-top: 5em;
@@ -43,7 +38,7 @@ body{
 
 .small-box{
     border: 0.1em solid hsl(248, 32%, 49%);
-    border-radius: 0.5em;
+    border-radius: 0.7em;
     background-color: hsl(248, 32%, 49%);
     color: white;
 
@@ -110,22 +105,27 @@ h2{
 @media only screen and (max-width: 430px) {
 
     .content {
-    grid-template-columns: 1fr;
-    display: grid;
-    margin: 0 auto;
-    gap: 5rem;
-    grid-auto-rows: auto;
-    font-size: 1.87em;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10em;
+        align-items: center;
     }
 
     .columnleft{
+        font-size: 2em;
         width: 100%;
-        margin: auto;
-        padding: auto;
+        margin-top: 0;
+        margin-left: 5em;
+
+
     }
     .columnright{
-        width: 100%;
-        margin: auto;
-        padding: auto;
+        margin-left: 20em;
+        width: 50%;
+    }
+
+    .big-box{
+        font-size: 2em;
+
+
     }
 }

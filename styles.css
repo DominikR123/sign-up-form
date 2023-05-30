@@ -8,48 +8,57 @@
 
 
 body{
-    background-image: url("bg-intro-desktop.png");
+    background-image: url(../intro-component-with-signup-form-master/images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%) ;
 }
 
 .content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0.5em;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
     text-align: center; 
     margin: 10%;
+    gap: 15em;
 }
 
 
 .columnright{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    
     
 }
 
 .columnleft{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    margin-top: 5em;
+    margin-top: 4em;
+    font-size: 2vh;
 }
 
 
 
 .small-box{
     border: 0.1em solid hsl(248, 32%, 49%);
-    border-radius: 0.7em;
+    border-radius: 0.6em;
     background-color: hsl(248, 32%, 49%);
     color: white;
-
+    font-size: 2vh;
+    box-shadow: 10px 12px 10px -4px rgb(99, 99, 99);
 }
 
 .big-box{
+    width: 100%;
     border: 0.1em solid hsl(0, 0%, 100%);
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     background-color: hsl(0, 0%, 100%);
     color: dark;
     padding: 3em;
+    font-size: 1.5vh;
+    box-shadow: 10px 12px 10px -4px rgb(99, 99, 99);
 
 }
 
@@ -57,27 +66,32 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #666;
+
 }
 
 input{
+    width: 100%;
     padding: 0.5em;
     margin: 1em 0 1em 0;
-    width: 100%;
+    font-size: 1.6vh;
 
 }
 
 .button{
+    font-size: 1vh;
     width: 100%;
     background-color:hsl(154, 59%, 51%);
     border-radius: 0.5em;
     padding: 1em;
     border: none;
     color: white;
-    font-size: 1em;
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 0.2rem #999;
 }
  
+
+
+
 .button:hover {background-color: hsl(154, 58%, 40%)}
 
 .button:active {
@@ -101,31 +115,37 @@ h2{
     text-align: left;
 }
 
+p span{
+    font-size: 2vh
+}
+p{
+    font-size: 2vh
+}
+p strong{
+    font-size: 2vh
+}
 
 @media only screen and (max-width: 430px) {
 
     .content {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10em;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        display: inline-block;
+        box-sizing: border-box;
     }
 
     .columnleft{
-        font-size: 2em;
+        font-size: 2.5em;
         width: 100%;
         margin-top: 0;
-        margin-left: 5em;
+        margin-left: 1em;
+        margin-bottom: 5em;
 
 
-    }
-    .columnright{
-        margin-left: 20em;
-        width: 50%;
     }
 
     .big-box{
-        font-size: 2em;
-
-
+        margin-top: 1em;
+ 
     }
 }

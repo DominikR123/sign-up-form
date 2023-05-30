@@ -3,11 +3,12 @@
 
 * {
     box-sizing: border-box;
+    font-size: 1vw;
 }
 
 
 body{
-    background-image: url("bg-intro-desktop.png");
+    background-image: url(../intro-component-with-signup-form-master/images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%) ;
 }
 
@@ -110,7 +111,7 @@ h1{
 }
 
 h2{
-    font-size: 1.5em;
+    font-size: 1em;
     color:white;
     font-family: 'Poppins', sans-serif;
     text-align: left;
@@ -126,7 +127,7 @@ p strong{
     font-size: 2vh;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 900px) {
 
     .content {
         flex-direction: row;
@@ -136,7 +137,7 @@ p strong{
     }
 
     .columnleft{
-        font-size: 2.5em;
+        font-size: 2.2em;
         width: 100%;
         margin-top: 0;
         margin-left: 1em;
@@ -148,10 +149,6 @@ p strong{
     .big-box{
         margin-top: 1em;
  
-    }
-    
-    .button{
-        overflow: auto;
     }
 
 }
